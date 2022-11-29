@@ -7,7 +7,7 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 source $CIRRUS_WORKING_DIR/config
 timeStart
 
-source build/envsetup.sh
+. build/envsetup.sh
 export TZ=Asia/Jakarta
 export BUILD_USERNAME=rosy
 export BUILD_HOSTNAME=nfsproject
@@ -22,4 +22,4 @@ retVal=$?
 timeEnd
 statusBuild
 # end
- 
+
